@@ -4,7 +4,8 @@
     <style>
         body {
             background: white }
-        .name_text {
+
+        .outer{
             background: white;
             color: black;
             text-align_center;
@@ -16,7 +17,18 @@
             left: 50%;
             margin-right: -50%;
             transform: translate(-50%, -50%);
-            animation: fade 3s;}
+            animation: fade 3s;
+            }
+
+        .name_text {
+            background: white;
+            color: black;
+            text-align_center;
+            font-family: helvetica;
+            border-radius: 1em;
+            padding: 1em;
+            position: absolute;
+            }
 
         .link {
             background: white;
@@ -26,11 +38,7 @@
             border-radius: 1em;
             padding: 1em;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            animation: fade 3s;}
+            }
 
         .logo {
             background: white;
@@ -40,11 +48,7 @@
             border-radius: 1em;
             padding: 1em;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            animation: fade 3s;}
+            }
 
         @keyframes fade {
           from { opacity: 0; }
@@ -69,20 +73,20 @@
     </style>
 
     <body>
+        <div class="outer">
+            <div class="name_text">
+                <h1>nick johnson</h1>
+                <p>new york</p>
+            </div>
 
-        <div class="name_text">
-            <h1>nick johnson</h1>
-            <p>new york</p>
+            <div class="link">
+                <a href="artrag.html" style="border:50px solid white">visit the art rag</a>
+            </div>
+
+            <div class="logo">
+                <img src="favicon.png" alt="favicon" height="50" width="50" style="border:50px solid white">
+            </div>
         </div>
-
-        <div class="link">
-            <a href="artrag.html" style="border:50px solid white">visit the art rag</a>
-        </div>
-
-        <div class="logo">
-            <img src="favicon.png" alt="favicon" height="50" width="50" style="border:50px solid white">
-        </div>
-
     </body>
 
 </html>
