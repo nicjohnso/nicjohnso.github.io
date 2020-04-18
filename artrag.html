@@ -2,17 +2,75 @@
 <html>
 
     <style>
+        * {
+        box-sizing: border-box;
+        }
+
         body {
-            background: white }
+            background: white
+            }
+
         h1 {
-            font-family:helvetica;
-            text-align: center; }
+            font-family: helvetica;
+            text-align: center;
+            }
+
+        p {
+        	font-family: helvetica;
+            text-align: center;
+            }
+
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: black;
+            }
+
+        .link {
+            background: white;
+            color: black;
+            text-align: center;
+            font-family: helvetica;
+            font-size: 15px;
+            border-radius: 1em;
+            padding: 1em;
+            margin: 25px auto;
+            }
+        .column {
+            float: left;
+            width: 50.0%;
+            padding: 75px 5px 50px;
+            }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
     </style>
 
     <body>
+        <div class="link">
+        	<a href="index.html">home</a>
+        </div>
         <div>
             <h1> art rag </h1>
+            <p> an exploration, decomposition, and recomposition of works of art </p>
+		</div>
+
+       	<div class="row">
+        	<div class="column">
+              	<img src="bigsplash.jpg" alt="Big Splash" style="width:100%">
+        	</div>
+            <div class="column">
+            	<img src="bigsplash_1000_750_edit.jpg" alt="Big Splash Edit" style="width:100%">
+        	</div>
         </div>
+
     </body>
 
 </html>
+
+
+
+
+
