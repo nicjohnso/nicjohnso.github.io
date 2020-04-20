@@ -2,6 +2,9 @@
 <html>
 
     <style>
+	    * {
+        box-sizing: border-box;
+        }
         body {
             background: white
             }
@@ -22,6 +25,18 @@
             color: black;
             }
 
+        .outer {
+            background: white;
+            color: black;
+            text-align: center;
+            font-family: helvetica;
+            border-radius: 1em;
+            padding: 1em;
+			margin-left: auto;
+			margin-right: auto;
+			width: 960px;
+            }
+			
         .link {
             background: white;
             color: black;
@@ -32,20 +47,46 @@
             padding: 1em;
             margin: 25px auto;
             }
-        .logo {
-            background: white;
-            color: black;
+			
+        .logo-col1 {
+			background-color: #0000ff;
+			border: 2px solid #ffffff;
+            float: left;
+            width: 55px;
+			height: 55px;
+			}
+        .logo-col2 {
+            background-color: #ff00ff;
+            border: 2px solid #ffffff;
+			float: left;
+            width: 25px;
+			height: 55px;
+            }
+		.logo-row {
+			width: 80px;
+			margin: 0 auto;
+			padding: 100px 0px;
+			}
+        .logo-row::after {
+            content: "";
+            clear: both;
+			width: 100px;
+            display: table;
+			margin: 0 auto;
+			}
+		.logo-text {
+        	font-family: century;
+			font-size: 40px;
+			color: #ffffff;
             text-align: center;
-            font-family: helvetica;
-            border-radius: 1em;
-            padding: 1em;
-            margin: 75px auto;
+			margin: 0px 0px;
             }
 
     </style>
 
 
     <body>
+	<div class="outer">
         <div class="link">
         	<a class="link" href="index.html">home</a>
         	<a class="link" href="artrag.html">art rag</a>
@@ -57,9 +98,13 @@
             <p>___</p>
         </div>
 
-        <div class="logo">
-                <img src="favicon.png" alt="favicon" height="50" width="50">
+        <div class="logo-row">
+            <div class="logo-col1">
+				<p class="logo-text">N</p>
+			</div>
+			<div class="logo-col2">
+			</div>
         </div>
-
+	</div>
     </body>
 </html>
