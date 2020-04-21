@@ -2,11 +2,27 @@
 <html>
 
     <style>
-        * {
+	    * {
         box-sizing: border-box;
         }
-		body {
+        body {
             background: white
+            }
+
+        h1 {
+            font-family: helvetica;
+            text-align: center;
+            padding: 10px;
+            }
+
+        p {
+        	font-family: helvetica;
+            text-align: center;
+            }
+
+        a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: black;
             }
 
         .outer {
@@ -16,16 +32,12 @@
             font-family: helvetica;
             border-radius: 1em;
             padding: 1em;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            animation: 
+			margin-left: auto;
+			margin-right: auto;
 			width: 960px;
             }
-
-        .name_text {
+		
+		.name_text {
             background: white;
             color: black;
             text-align: center;
@@ -33,9 +45,9 @@
             border-radius: 1em;
             padding: 1em;
             margin: 100px auto;
-            }
-
-        .link {
+            }	
+        
+		.link {
             background: white;
             color: black;
             text-align: center;
@@ -45,33 +57,8 @@
             padding: 1em;
             margin: 25px auto;
             }
-
-        .logo {
-            background: white;
-            color: black;
-            text-align: center;
-            font-family: helvetica;
-            border-radius: 1em;
-            padding: 1em;
-            margin: 75px auto;
-            }
-
-        @keyframes fade {
-          from { opacity: 0; }
-          to   { opacity: 1; }
-          }
-
-        a:link, a:visited, a:hover, a:active {
-            text-decoration: none;
-            color: black;
-            }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto; }
 			
-				.logo-col1 {
+        .logo-col1 {
 			background-color: #0000ff;
 			border: 2px solid #ffffff;
             float: left;
@@ -82,18 +69,18 @@
             background-color: #ff00ff;
             border: 2px solid #ffffff;
 			float: left;
-            width: 25px;
+            width: 10px;
 			height: 55px;
             }
 		.logo-row {
-			width: 90px;
+			width: 65px;
 			margin: 0 auto;
-			padding: 150px 0px;
+			padding: 100px 0px;
 			}
         .logo-row::after {
             content: "";
             clear: both;
-			width: 150px;
+			width: 100px;
             display: table;
 			margin: 0 auto;
 			}
@@ -104,33 +91,33 @@
             text-align: center;
 			margin: 0px 0px;
             }
+
     </style>
 
     <body>
-        <div class="outer">
-            <div class="name_text">
-                <h1>nick johnson</h1>
-                <p>___</p>
-                <p>new york</p>
-                <p>___</p>
-            </div>
+	<div class="outer">
+		<div class="name_text">
+			<h1>nick johnson</h1>
+			<p>___</p>
+			<p>new york</p>
+			<p>___</p>
+		</div>
 
-            <div class="link">
-                <a class="link" href="about.html">about me</a>
-            </div>
+		<div class="link">
+			<a class="link" href="about.html">about me</a>
+		</div>
 
-            <div class="link">
-                <a class="link" href="artrag.html">visit the art rag</a>
-            </div>
+		<div class="link">
+			<a class="link" href="artrag.html">visit the art rag</a>
+		</div>
 
-        <div class="logo-row">
-            <div class="logo-col1">
+		<div class="logo-row">
+			<div class="logo-col1">
 				<p class="logo-text">N</p>
 			</div>
 			<div class="logo-col2">
 			</div>
-        </div>
-        </div>
+		</div>
+	</div>
     </body>
-
 </html>
