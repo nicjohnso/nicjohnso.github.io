@@ -20,8 +20,17 @@
         	font-family: helvetica;
             text-align: center;
             }
-
-        a:link, a:active, a:visited {
+		
+		.desc {
+			font-size: 13px;
+			font-style: italic;
+			}
+			
+		.pad {
+			margin-bottom: 50px;
+			}
+        
+		a:link, a:active, a:visited {
             text-decoration: none;
             color: black;
             }
@@ -125,15 +134,21 @@
 	<div class="outer"> 
         <div class="link">
         	<a class="link" href="index.html">home</a>
-        	<a class="link" href="about.html">about</a>
+        	<a class="link" href="about.html">about me</a>			
+        	<a class="link" href="blogs.html">musings</a>
         </div>
         <div>
             <h1>art rag</h1>
-			<a class="link" href="https://www.instagram.com/art_rag/">@art_rag on instagram</a>
             <p>___</p>
+			<a class="link" href="https://www.instagram.com/art_rag/">@art_rag on instagram</a>
             <p>an exploration, decomposition, and recomposition of works of art</p>
 			<p>"meditations on derivations"</p>
-            <p>___</p>
+            <p class="pad">___</p>
+			<p class="desc">mediatations on derivations is an exercise in using computer vision to reimagine the work of our worlds leading artists</p>
+			<p class="desc">utilizing simple linear iterative clustering, these artworks are segmented into superpixels</p>
+			<p class="desc">by amping up the compactness, the superpixels are turned into cubic representations</p>
+			<p class="desc">these cubes are recolored using regional adjency graphing, reimagining the original artist's work into distinct color fields </p>
+			<p>___</p>
 		</div>
 
 <!-- home -->
