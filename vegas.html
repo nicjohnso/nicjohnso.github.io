@@ -2,7 +2,7 @@
 <html>
 
     <style>
-	    * {
+        * {
         box-sizing: border-box;
         }
         body {
@@ -19,8 +19,17 @@
         	font-family: helvetica;
             text-align: center;
             }
-
-        a:link, a:active, a:visited {
+		
+		.desc {
+			font-size: 13px;
+			font-style: italic;
+			}
+			
+		.pad {
+			margin-bottom: 50px;
+			}
+        
+		a:link, a:active, a:visited {
             text-decoration: none;
             color: black;
             }
@@ -29,7 +38,7 @@
             color: #0000ff;
 			font-weight: bold;
             }
-			
+
         .outer {
             background: white;
             color: black;
@@ -40,7 +49,6 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 960px;
-			min-height: 98vh;
             }
 			
         .link {
@@ -53,8 +61,34 @@
             padding: 1em;
             margin: 25px auto;
             }
-			
-        .logo-col1 {
+
+        .logo {
+            background: white;
+            color: black;
+            text-align: center;
+            font-family: helvetica;
+            border-radius: 1em;
+            padding: 1em;
+            margin: 75px auto;
+            }
+
+        .column1 {
+            float: left;
+            width: 50.0%;
+            padding: 75px 5px 5px;
+            }
+        .column2 {
+            color: white;
+            float: left;
+            width: 50.0%;
+            padding: 75px 5px 5px;
+            }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+		.logo-col1 {
 			background-color: #0000ff;
 			border: 2px solid #ffffff;
             float: left;
@@ -69,13 +103,9 @@
 			height: 55px;
             }
 		.logo-row {
-			position: absolute;
-			bottom: 10px;
 			width: 65px;
 			margin: 0 auto;
 			padding: 100px 0px;
-			left: 50%;
-			margin-left: -32.5px;
 			}
         .logo-row::after {
             content: "";
@@ -91,33 +121,54 @@
             text-align: center;
 			margin: 0px 0px;
             }
-		img {
-			border-radius: 0.25em;
-			}
 
     </style>
 
 	<head>
-	<title>about me - nick johnson</title>
+	<title>colors of las vegas - nick johnson</title>
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
 	</head>
 	
     <body>
-	<div class="outer">
+	<div class="outer"> 
         <div class="link">
         	<a class="link" href="index.html">home</a>
+        	<a class="link" href="about.html">about me</a>			
         	<a class="link" href="blogs.html">projects</a>
         </div>
         <div>
-            <h1>about me</h1>
+            <h1>colors of las vegas</h1>
             <p>___</p>
-            <p>i am a consultant and occasional creative based in new york</p>
-			<p>i can be reached at nicjohnso@gmail.com</p>
-            <p>___</p>
-			<img src="assets/me.jpg" alt="me" style="width:50%">
-            <p>___</p>
+            <p>a vision into the colorful soul of sin city</p>
+            <p class="pad">___</p>
+			<p class="desc">1</p>
+			<p class="desc">2</p>
+			<p class="desc">3</p>
+			<p class="desc">4</p>
+			<p>___</p>
+		</div>
+
+<!-- home -->
+       	<div class="row">
+        	<div class="column1">
+            	<p> 'Interior with Blue Terrace and Garden',  David Hockney, 2017 </p>
+              	<a href="https://thedavidhockneyfoundation.org/artwork/2803">
+              	<img src="assets/home.jpg" alt="Interior" style="width:100%">
+              	</a>
+        	</div>
+            <div class="column2">
+                <p> blank </p>
+            	<img src="assets/home_edit.jpg" alt="Interior Edit" style="width:100%">
+        	</div>
         </div>
+
+
 		
+        <div>
+            <p>___</p>
+		</div>
+		
+<!-- logo -->
         <div class="logo-row">
             <div class="logo-col1">
 				<p class="logo-text">N</p>
@@ -128,3 +179,8 @@
 	</div>
     </body>
 </html>
+
+
+
+
+
