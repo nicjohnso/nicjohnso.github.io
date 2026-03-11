@@ -3,8 +3,9 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>nick johnson</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico">
 
 <style>
 
@@ -14,46 +15,57 @@
 
 body {
     margin: 0;
-    background: lightgrey;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.outer {
-    background: white;
-    color: black;
-    text-align: center;
-    border-radius: 4px;
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 960px;
-    min-height: 98vh;
+    background: #f2f2f2;
+    color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
-.name_text {
-    margin: auto;
+.container {
+    background: white;
+    padding: 60px 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 h1 {
-    padding: 10px;
     margin: 0;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.divider {
+    margin: 20px auto;
+    width: 40px;
+    height: 2px;
+    background: #ddd;
 }
 
 p {
-    margin: 6px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
 }
 
 a {
+    color: #111;
     text-decoration: none;
-    color: black;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: blue;
-    font-weight: bold;
+    color: #0066ff;
+    border-color: #0066ff;
 }
 
 </style>
@@ -61,14 +73,21 @@ a:hover {
 
 <body>
 
-<div class="outer">
-    <div class="name_text">
-        <h1>nick johnson</h1>
-        <p>___</p>
-        <p>based in new york</p>
-        <p>can be reached at nicjohnso@gmail.com</p>
-        <p>___</p>
-    </div>
+<div class="container">
+    <h1>nick johnson</h1>
+
+    <div class="divider"></div>
+
+    <p>based in new york</p>
+
+    <p>
+        can be reached at  
+        <a href="mailto:nicjohnso@gmail.com">
+            nicjohnso@gmail.com
+        </a>
+    </p>
+
+    <div class="divider"></div>
 </div>
 
 </body>
