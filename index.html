@@ -27,8 +27,7 @@ padding: 60px 20px;
 
 .container {
 max-width: 700px;
-width: 100%;
-background: #241f1a;
+width: 100%;ackground: #241f1a;
 padding: 40px 30px;
 border-radius: 12px;
 box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -52,8 +51,7 @@ text-decoration: underline;
 
 hr {
 border: none;
-height: 1px;
-background: #332b24;
+height: 1px;ackground: #332b24;
 width: 60px;
 margin: 30px auto;
 opacity: 0.8;
@@ -80,7 +78,7 @@ color: #d4a373;
 .post-content {
   max-height: 0;
   padding-top: 0;
-  overflow: hidden;
+overflow: hidden;
   transition: max-height .3s ease, padding-top .3s ease;
 }
 
@@ -130,14 +128,16 @@ margin: 6px 0;
 <hr>
 
 <div class="blog">
-
+<!--
 <div id="posts"></div>
-
+-->
 </div>
 
 </div>
 
 <script>
+
+/* Commented out the loadPosts function to temporarily disable blog posts */
 
 async function loadPosts(){
 
@@ -177,7 +177,7 @@ container.appendChild(content)
 
 }
 
-loadPosts()
+//loadPosts() // This line is commented out to disable blog posts
 
 </script>
 
